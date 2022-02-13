@@ -1,0 +1,104 @@
+@import '../../../variables'
+
+.single-product-container-div
+    width: 100rem
+    height: 40.5rem
+    margin: 1.5rem
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 1.5rem
+    background-color: #fff
+    box-shadow: 0rem .3rem .6rem #00000029
+    position: relative
+
+.background-image-position
+    position: absolute
+    min-height: 100%
+    width: 100%
+    border-radius: 1.5rem
+    opacity: 0.3
+
+.title-name
+    margin-bottom: 2.0rem
+    font-size: 2.2rem
+
+.aline-col-element
+    width: 100%
+    height: 32.5rem
+    display: flex
+    position: relative
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.aline-col-element h3
+    margin-top: -1.5rem
+    margin-bottom: 1.0rem
+
+.product-img-style
+    width: 20rem
+    height: 20rem
+    padding: 1rem
+    border-radius: 1.5rem
+    display: flex
+    justify-content: center
+    align-items: center
+    box-shadow: .0rem .0rem .6rem $icon-red
+    background-color: white
+    z-index: 2
+    margin-bottom: 2rem
+
+.product-img-style img
+    width: 18.0rem
+    height: 15.0rem
+
+.separate-key-value
+    display: flex
+    justify-content: center
+    margin-bottom: 1.5rem
+
+.key-style
+    font-size: 2rem
+    font-weight: 500
+
+.key-value
+    font-size: 2rem
+    margin-left: 2.0rem
+
+.product-details-style
+    height: 32.5rem
+    display: flex
+    position: relative
+    z-index: 1
+    justify-content: center
+    align-items: center
+
+.packaging-text
+    text-align: center
+
+.packaging-text-contact-benifit
+    width: 100%
+    line-height: 1.5
+    padding: 2.4rem 0
+
+.packaging-text-contact-benifit p + p
+    margin-top: 1.6rem
+
+@media (max-width: 1200px)
+
+    .single-product-container-div
+        width: calc(50% - 3rem)
+        display: inline-block
+    
+    .single-product-container-div:nth-child(3n)
+        margin: 6rem calc(25% - 1.5rem)
+
+@media (max-width: 800px)
+
+    .single-product-container-div
+        width: calc(100% - 3rem)
+        display: flex
+    
+    .single-product-container-div:nth-child(3n)
+        margin: 1.5rem
