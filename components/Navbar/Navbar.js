@@ -59,7 +59,7 @@ const Navbar = (props) => {
 			<nav className='main-nav'>
 				<div className='logo-img'>
 					<img src='img/pankaj_Singh_card-previ.png'></img>
-					<h2 class="logo nanum-myeongjo-normal-black-pearl-3-5rem">JAY AMBE CHEMICALS</h2>
+					<h2 className="logo nanum-myeongjo-normal-black-pearl-3-5rem">JAY AMBE CHEMICALS</h2>
 				</div>
 
 				{/* 2nd menu part  */}
