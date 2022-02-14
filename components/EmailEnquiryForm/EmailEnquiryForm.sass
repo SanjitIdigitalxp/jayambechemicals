@@ -1,0 +1,76 @@
+@import '../../variables'
+
+.enquiry-form-div
+    height: 55rem
+    width: 40rem
+    position: relative
+    z-index: 2
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    // box-shadow: 0rem .3rem .6rem #00000029
+    // background-color: $icon-red
+    border-radius: 1rem
+
+.enquiry-form-div form
+    width: 100%
+
+.contact-form-text-div
+    height: 4rem
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 2rem
+
+.contact-form-button-div
+    height: 4rem
+    display: flex
+    align-items: center
+    justify-content: center
+
+.enquiry-input-box
+    display: block
+    width: 100%
+    height: 5rem
+    border-radius: 1rem
+    margin: 1rem 0rem
+    border: 0.2rem solid $icon-red
+
+.enquiry-textarea-box
+    display: block
+    width: 100%
+    height: 20rem
+    border-radius: 1rem
+    margin: 1.5rem 0rem
+    border: 0.2rem solid $icon-red
+
+.enquiry-submit-button
+    width: 15rem
+    height: 5rem
+    border-radius: 1rem
+    margin-top: 3rem
+    background-color: $icon-red
+
+@media (max-width: 990px)
+
+    .enquiry-form-div
+        position: static
+        display: block
+        margin: 4rem auto
+
+
+@media (max-width: 500px)
+
+    .enquiry-form-div
+        position: static
+        width: 100%
+
+    
+    .enquiry-textarea-box, .enquiry-input-box, .contact-form-text-div
+        display: block
+        width: 100%
+
+
+
+    
