@@ -1,12 +1,13 @@
 import React from "react";
 import { Row, Col } from "react-bootstrap";
+import styles from '../styles/SingleProductPageView.module.sass';
 function SingleProductPageView(props) {
 	return (
-		<div className='center-product-image-and-delivery'>
-			<div className='single-product-container-div'>
+		<div className={styles['center-product-image-and-delivery']}>
+			<div className={styles['single-product-container-div']}>
 				<img
 					src='img/chemical-product-background.jpg'
-					className='background-image-position'
+					className={styles['background-image-position']}
 				/>
 				<Row>
 					<Col sm={12} md={6} lg={6} xl={6}>
@@ -23,48 +24,50 @@ function SingleProductPageView(props) {
 				</Row>
 				<Row sm={12} md={12} lg={12} xl={12}>
 					<Col
-						className='aline-col-element archivo-normal-black-pearl-2rem-600'
+						className={
+							[styles['aline-col-element'], styles['archivo-normal-black-pearl-2rem-600']].join(' ')
+						}
 						sm={12}
 						md={6}
 						lg={6}
 						xl={6}>
-						<h1 className='title-name'>{props.prodName}</h1>
-						<div className='product-img-style'>
+						<h1 className={styles['title-name']}>{props.prodName}</h1>
+						<div className={styles['product-img-style']}>
 							<img src={props.imagePath}></img>
 						</div>
 
-						<div className='product-details-style'>
+						<div className={styles['product-details-style']}>
 							<div>
 								<Row>
-									<div className='separate-key-value'>
-										<div className='archivo-bold-black-pearl-2rem'>
+									<div className={styles['separate-key-value']}>
+										<div className={styles['archivo-bold-black-pearl-2rem']}>
 											Synonyms:
 										</div>
-										<div className='archivo-normal-black-pearl-2rem'>
+										<div className={styles['archivo-normal-black-pearl-2rem']}>
 											{props.synonyms}
 										</div>
 									</div>
-									<div className='separate-key-value'>
-										<div className='archivo-bold-black-pearl-2rem'>
+									<div className={styles['separate-key-value']}>
+										<div className={styles['archivo-bold-black-pearl-2rem']}>
 											CAS Number:
 										</div>
-										<div className='archivo-normal-black-pearl-2rem'>
+										<div className={styles['archivo-normal-black-pearl-2rem']}>
 											{props.cas}
 										</div>
 									</div>
-									<div className='separate-key-value'>
-										<div className='archivo-bold-black-pearl-2rem'>
+									<div className={styles['separate-key-value']}>
+										<div className={styles['archivo-bold-black-pearl-2rem']}>
 											Molecular Weight:
 										</div>
-										<div className='archivo-normal-black-pearl-2rem'>
+										<div className={styles['archivo-normal-black-pearl-2rem']}>
 											{props.moleculerWeight}
 										</div>
 									</div>
-									<div className='separate-key-value'>
-										<div className='archivo-bold-black-pearl-2rem'>
+									<div className={styles['separate-key-value']}>
+										<div className={styles['archivo-bold-black-pearl-2rem']}>
 											Empirical Formula (Hill Notation):
 										</div>
-										<div className='archivo-normal-black-pearl-2rem'>
+										<div className={styles['archivo-normal-black-pearl-2rem']}>
 											{props.empirical}
 										</div>
 									</div>

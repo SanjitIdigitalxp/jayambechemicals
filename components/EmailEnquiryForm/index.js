@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
+import styles from '../styles/EmailEnquiryForm.module.sass';
 function EmailEnquiryForm() {
 	const form = useRef();
 
@@ -21,41 +22,49 @@ function EmailEnquiryForm() {
 	}
 	return (
 		<div>
-			<div className='enquiry-form-div'>
-				<form ref={form} onSubmit={(e)=>sendEmail(e)}>
-					<div className='contact-form-text-div'>
-						<p className='archivo-normal-contact-us-pearl-4rem-900'>
+			<div className={styles['enquiry-form-div']}>
+				<form ref={form} onSubmit={(e) => sendEmail(e)}>
+					<div className={styles['contact-form-text-div']}>
+						<p className={styles['archivo-normal-contact-us-pearl-4rem-900']}>
 							Contact Us
 						</p>
 					</div>
 					<input
 						placeholder='Name'
 						name='name'
-						className='enquiry-input-box archivo-normal-black-pearl-2rem'
-					></input>
+						className={[
+							styles['enquiry-input-box'],
+							styles['archivo-normal-black-pearl-2rem']
+						].join(' ')}></input>
 					<input
 						placeholder='Email'
 						name='email'
-						className='enquiry-input-box archivo-normal-black-pearl-2rem'
-					></input>
+						className={[
+							styles['enquiry-input-box'],
+							styles['archivo-normal-black-pearl-2rem']
+						].join(' ')}></input>
 					<input
 						placeholder='Subject'
 						name='subject'
-						className='enquiry-input-box archivo-normal-black-pearl-2rem'
-					></input>
+						className={[
+							styles['enquiry-input-box'],
+							styles['archivo-normal-black-pearl-2rem']
+						].join(' ')}></input>
 					<textarea
 						placeholder='Message'
 						name='message'
-						className='enquiry-textarea-box archivo-normal-black-pearl-2rem'
-					></textarea>
-					<div className='contact-form-button-div'>
+						className={[
+							styles['enquiry-textarea-box'],
+							styles['archivo-normal-black-pearl-2rem']
+						].join(' ')}></textarea>
+					<div className={styles['contact-form-button-div']}>
 						<input
 							type='submit'
 							value='Submit'
-							className='enquiry-submit-button archivo-normal-white-pearl-2rem'
+							className={
+								[styles['enquiry-submit-button'], styles['archivo-normal-white-pearl-2rem']].join(' ')
+							}
 						/>
-							
-						
 					</div>
 				</form>
 			</div>
