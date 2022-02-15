@@ -1,5 +1,6 @@
 import React from 'react'
 import Particles from "react-tsparticles";
+
 const particlesoptions = {
     particles: {
       number: {
@@ -92,13 +93,13 @@ const particlesoptions = {
     },
     retina_detect: true
   };
-function Particals() {
+function particals() {
   
     return (
         <div>
-        <Particles className="particles" params={particlesoptions} />
+        <Particles className={styles['particles']} params={particlesoptions} />
         </div>
     )
 }
 
-export default Particals
+export default particals
