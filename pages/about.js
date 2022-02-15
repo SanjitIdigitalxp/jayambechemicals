@@ -1,37 +1,27 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import styles from '../styles/about.module.sass'
+import styles from '../styles/about.module.sass';
 
 function about() {
 	return (
 		<div className={styles['all-the-details-of-about-us-center']}>
 			<img
 				className={styles['image-div-about-us']}
-				src='img/background-about-us-2.png'></img>
+				src='./public/img/background-about-us-2.png'></img>
 			<div className={styles['profile-pic-container']}>
 				<div className={styles['profile-pic-1']}>
-					<img
-						src='img/image1.jfif'
-						className={styles['profile-pic-individual']}></img>
+					<img src='./public/img/image1.jfif' className={styles['profile-pic-individual']}></img>
 				</div>
-				<div className={styles.profile - pic - 2}>
-					<img
-						src='img/image2.jfif'
-						className={styles['profile-pic-individual']}></img>
+				<div className={styles['profile-pic-2']}>
+					<img src='./public/img/image2.jfif' className={styles['profile-pic-individual']}></img>
 				</div>
-				<div className={styles.profile - pic - 1}>
-					<img
-						src='img/image3.jfif'
-						className={styles['profile-pic-individual']}></img>
+				<div className={styles['profile-pic-1']}>
+					<img src='./public/img/image3.jfif' className={styles['profile-pic-individual']}></img>
 				</div>
 			</div>
 			<div className={styles['about-us-details-center-container']}>
 				<div className={styles['about-us-details-center']}>
-					<div
-						className={[
-							styles['title-about-text'],
-							styles['archivo-black-about-topic-us-title-4rem']
-						].join(' ')}>
+					<div className={[styles['title-about-text'], styles['archivo-black-about-topic-us-title-4rem']], join(' ')}>
 						About Us
 					</div>
 					<div className={styles['topic-data-width']}>
@@ -90,24 +80,16 @@ function about() {
 				</div>
 			</div> */}
 			<div className={styles['our-values-details-center-container']}>
-				<div className={styles['about-us-details-center']}>
-					<div
-						className={[
-							styles['title-about-text'],
-							styles['archivo-black-about-topic-us-title-4rem']
-						].join(' ')}>
-						Our Values
+			<div className={styles['about-us-details-center']}>
+				<div className={[styles['title-about-text'], styles['archivo-black-about-topic-us-title-4rem']], join(' ')}>
+							Our Values
+						</div>
 					</div>
-				</div>
 				<div className={styles['width-of-value-div']}>
 					<Row className={styles['row-width-size']}>
 						<Col className={styles['value-multi-column']}>
 							<div>
-								<div
-									className={[
-										styles['our-value-sub-topic'],
-										styles['archivo-normal-black-pearl-2-5rem-500']
-									].join(' ')}>
+								<div className={[styles['our-value-sub-topic'], styles['archivo-normal-black-pearl-2-5rem-500']], join(' ')}>
 									Responsible
 								</div>
 								<p className={styles['archivo-normal-black-pearl-2rem-550']}>
@@ -117,13 +99,9 @@ function about() {
 								</p>
 							</div>
 						</Col>
-						<Col className={styles.value - multi - column}>
+						<Col className={styles['value-multi-column']}>
 							<div>
-								<div
-									className={[
-										styles['our-value-sub-topic'],
-										styles['archivo-normal-black-pearl-2-5rem-500']
-									].join(' ')}>
+								<div className={[styles['our-value-sub-topic'], styles['archivo-normal-black-pearl-2-5rem-500']], join(' ')}>
 									Focused
 								</div>
 								<p className={styles['archivo-normal-black-pearl-2rem-550']}>
@@ -134,11 +112,7 @@ function about() {
 						</Col>
 						<Col className={styles['value-multi-column']}>
 							<div>
-								<div
-									className={[
-										styles['our-value-sub-topic'],
-										styles['archivo-normal-black-pearl-2-5rem-500']
-									].join(' ')}>
+								<div className={[styles['our-value-sub-topic'], styles['archivo-normal-black-pearl-2-5rem-500']], join(' ')}>
 									Straightforward
 								</div>
 								<p className={styles['archivo-normal-black-pearl-2rem-550']}>
@@ -147,14 +121,9 @@ function about() {
 								</p>
 							</div>
 						</Col>
-						<Col className={styles.value - multi - column}>
+						<Col className={styles['value-multi-column']}>
 							<div>
-								<div
-									className={
-										[styles[
-											'our-value-sub-topic'], styles['archivo-normal-black-pearl-2-5rem-500'
-										]].join(' ')
-									}>
+								<div className={[styles['our-value-sub-topic'], styles['archivo-normal-black-pearl-2-5rem-500']], join(' ')}>
 									Collaborative
 								</div>
 								<p className={styles['archivo-normal-black-pearl-2rem-550']}>
@@ -167,10 +136,9 @@ function about() {
 					</Row>
 				</div>
 			</div>
-			<div
-				className={[styles['group-7801'], styles['archivo-normal-black-pearl-1-4rem']].join(' ')}
+			<div className={[styles['group-7801'], styles['archivo-normal-black-pearl-1-4rem']], join(' ')}
 				style={{ backgroundColor: 'white' }}>
-				<div className={styles.copyright}>
+				<div className={styles['copyright']}>
 					©Copyright 2021 JAY AMBE CHEMICALS. All Rights Reserved{' '}
 				</div>
 			</div>

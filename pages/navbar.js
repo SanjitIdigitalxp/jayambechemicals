@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import ProductDropDownMenu from "../Common/ProductDropDownMenu";
+import ProductDropDownMenu from "../components/Common/ProductDropDownMenu";
 import {
 	FaFacebookSquare,
 	FaInstagramSquare,
@@ -9,6 +9,8 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 import { NavLink, useHistory } from "react-router-dom";
 import { connect } from "react-redux";
+import styles from '../styles/navbar.module.sass';
+
 let useClickOutSide = (handler) => {
 	let domNode2 = useRef();
 
@@ -56,10 +58,10 @@ const Navbar = (props) => {
 
 	return (
 		<div style={{ position: 'relative', backgroundColor: 'white' }}>
-			<nav className='main-nav'>
-				<div className='logo-img'>
-					<img src='img/pankaj_Singh_card-previ.png'></img>
-					<h2 className="logo nanum-myeongjo-normal-black-pearl-3-5rem">JAY AMBE CHEMICALS</h2>
+			<nav className={styles['main-nav']}>
+				<div className={styles['logo-img']}>
+					<img src='./public/img/pankaj_Singh_card-previ.png'></img>
+					<h2 className={[styles['logo'], styles['nanum-myeongjo-normal-black-pearl-3-5rem']], join(' ')}>JAY AMBE CHEMICALS</h2>
 				</div>
 
 				{/* 2nd menu part  */}
@@ -68,14 +70,14 @@ const Navbar = (props) => {
 						showMediaIcons ? 'menu-link mobile-menu-link' : 'menu-link'
 					}>
 					<ul>
-						<li className='archivo-normal-black-pearl-2rem' >
+						<li className={styles['archivo-normal-black-pearl-2rem']}>
 							<NavLink to='/'>Home</NavLink>
 						</li>
-						<li className='archivo-normal-black-pearl-2rem'>
+						<li className={styles['archivo-normal-black-pearl-2rem']}>
 							<NavLink to='/about'>about</NavLink>
 						</li>
 						<li
-							className='archivo-normal-black-pearl-2rem'
+							className={styles['archivo-normal-black-pearl-2rem']}
 							style={{ position: 'relative' }}
 							ref={domNode}>
 							<p onClick={() => showDropDown()}>Products</p>
@@ -86,16 +88,16 @@ const Navbar = (props) => {
 							)}
 						</li>
 
-						<li className='archivo-normal-black-pearl-2rem'>
+						<li className={styles['archivo-normal-black-pearl-2rem']}>
 							<NavLink to='/contact'>contact</NavLink>
 						</li>
 					</ul>
 				</div>
 
 				{/* 3rd social media links */}
-				<div className='social-media'>
+				<div className={styles['social-media']}>
 					{/* hamburget menu start  */}
-					<div className='hamburger-menu'>
+					<div className={styles['hamburger-menu']}>
 						<a href='#' onClick={() => setShowMediaIcons(!showMediaIcons)}>
 							<GiHamburgerMenu />
 						</a>
