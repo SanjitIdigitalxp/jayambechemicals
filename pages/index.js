@@ -1,5 +1,5 @@
 import React from "react";
-import SingleProductView from "../Common/SingleProductView";
+import SingleProductView from "../../Common/SingleProductView";
 import { Row, Col } from "react-bootstrap";
 import footer from "./footer.js";
 import particals from "./particals.js";

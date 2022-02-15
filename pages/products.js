@@ -70,4 +70,4 @@ const mapStateToProps = (state) =>{
 		selectedProductPage: state.selectedProductPage,
 	}
 }
-export default connect(mapStateToProps)(Products);
+export default connect(mapStateToProps)(products);
